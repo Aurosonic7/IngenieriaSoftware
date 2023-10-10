@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+header{
+    color: red;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    background-color: aliceblue;
+}
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+    background-color: aliceblue;
+}
