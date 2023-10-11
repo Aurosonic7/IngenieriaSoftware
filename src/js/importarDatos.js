@@ -1,10 +1,2 @@
-//Importar Datos de excel
-function importarDatos(){
-    console.log("Entre a importar datos");
-    var input = document.getElementById("input");
-    var reader = new FileReader();
-    reader.onload = function(){
-        var fileData = reader.result;
-        fileData = fileData.split("\n");
-    };
-}
+// Accion del boton para importar datos de un txt y csv
+// Carga los datos en la tabla

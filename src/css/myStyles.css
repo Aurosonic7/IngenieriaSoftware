@@ -5,26 +5,53 @@
 
 
 
-header{
-    color: red;
-    background-color: #ccc;
+header {
+    color: white;
+    background-color: #007bff;
     padding: 10px;
 }
 
-.container{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+
+.container {
+    display: flex;
+    justify-content: space-around;
 }
-.col-25{
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-    background-color: aliceblue;
+
+.columna {
+    flex: 1;
+    padding: 10px;
 }
-.col-75{
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-    background-color: aliceblue;
+
+.btnsMenu{
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.btnsMenu button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    display: flex;
+    margin-top: 10px;
+}
+
+.btnsMenu button:hover {
+    background-color: #0069d9;
+}
+
+.btnsMenu button:active {
+    background-color: #005cbf;
+}
+
+.btnsMenu button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #007bff;
 }
