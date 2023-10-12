@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="../css/myStyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -14,30 +15,38 @@
         <div>
             <fieldset>
                 <legend>Informe estadistico</legend>
-                <table>
-                    
+                <table id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Dias</th>
+                            <th>Temperatura</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
                 </table>
-                <p>
-                    ...
-                </p>
+                <hr>
+                <p>Promedio de la temperatura: <span id="average"></span></p>
+                <p>Máximo de la temperatura: <span id="maximum"></span></p>
+                <p>Mínimo de la temperatura: <span id="minimum"></span></p>
             </fieldset>
         </div>
         <div>
-            <fieldset>
+            <fieldset id="scatterPlotContainer">
                 <legend>Gráfica de datos</legend>
-                <p>
-                    ...
-                </p>
+                    <canvas id="scatterPlot"></canvas>
             </fieldset>
         </div>
 
+
     </div>
 
+    <center> <input type="file" id="excelFile" accept=".xlsx" /> </center>
     <div class="btnsMenu">
-        <button>Importar Archivos</button>
-        <button>Exportar Archivos</button>
+        <button onclick="importExcel()">Importar Excel</button>
+        <button onclick="exportExcel()">Exportar Excel</button>
     </div>
-    <script src="../js/importarDatos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.4/dist/xlsx.full.min.js"></script>
+    <script src="../js/back-end.js"></script>
 </body>
 
 </html>

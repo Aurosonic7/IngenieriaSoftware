@@ -3,14 +3,19 @@
     margin: 0;
 }
 
+body {
+    background-image: url('https://media.istockphoto.com/id/1454762981/es/vector/ilustración-en-acuarela-de-pintorescas-montañas-nevadas-y-árboles-aislados.jpg?s=1024x1024&w=is&k=20&c=iOZNtZXoF_h7t2b-RkUCVXJ7_uCaYo5WQ_UPgLGnQgQ=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
+}
 
 header {
     color: white;
     background-color: #007bff;
     padding: 10px;
 }
-
 
 .container {
     display: flex;
